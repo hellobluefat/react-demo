@@ -39,11 +39,12 @@ class App extends React.Component{
         <button onClick={this.handleTab.bind(this,1)}>选项卡2</button>
         <button onClick={this.handleTab.bind(this,2)}>选项卡3</button>
         <br/>
-        {/* {
+
+        <div style={{height:this.state.show ? "100px" : "0px",width:"100px",background:"red",transition:"all 1s"}}></div>
+        {
           this.state.tab===0 ? <img src={img}/> :
           this.state.tab===1 ? <img src={img1}/> : "我是选项卡三"
-        } */}
-        <div style={{height:"100px",width:"100px",background:"red",display:this.state.show  ? "block" :"none"}}></div>
+        }
       </div>)
   }
 }
